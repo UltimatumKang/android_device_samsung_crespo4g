@@ -30,3 +30,7 @@ include device/samsung/crespo/BoardConfigCommon.mk
 # Use crespo4g-specific variants
 #TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_crespo4g
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/crespo4g
+
+
+COMMON_GLOBAL_CFLAGS += -fno-strict-aliasing
+COMMON_GLOBAL_CPPFLAGS += -fno-strict-aliasing
